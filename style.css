@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    html {
+        font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    }
+
+    input:focus {
+        outline: none;
+        box-shadow: 0 0 3px 0 #0a68ff65;
+        border: 1px solid #0866ff;
+    }
+
+    ::placeholder {
+        color: #65676B;
+        opacity: 1; /* Firefox */
+    }
+      
+    ::-ms-input-placeholder { /* Edge 12 -18 */
+        color: #65676B;
+    }
+
+    input:focus::placeholder {
+        color: rgba(101, 103, 107, 0.4);
+    }
+  }
